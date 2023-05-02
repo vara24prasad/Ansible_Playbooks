@@ -1,0 +1,7 @@
+---
+ - name: debug module for case4
+   hosts: lab
+   tasks:
+     - name: Printing Hostname by Using system Variables in Debug Module
+       debug:
+        msg: "The Hostname is: {{inventory_hostname}}"
