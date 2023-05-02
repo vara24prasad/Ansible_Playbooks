@@ -1,0 +1,11 @@
+---
+ - name: Debug Module for case7
+   hosts: lab
+   tasks:
+     -  name: printing Ip addres,hostname & Fully Qualified Domain by using system Variable with debug Module
+        debug:
+         msg:
+           - my ipaddres is {{ansible_default_ipv4.address}}
+           - my hostname is {{ansible_hostname}}
+           - Fully Qdomain is {{ansible_facts['fqdn']}}
+           - IP v4 is {{ansible_facts.default_ipv4}}
