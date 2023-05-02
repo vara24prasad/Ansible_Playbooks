@@ -1,0 +1,11 @@
+---
+ - name: Verbosity Parameter of Debug Module is used to ignores the unnessary outputs
+   hosts: lab
+   tasks:
+     - name: Verbosity
+       debug:
+         msg: "my ip address of server: {{ansible_default_ipv4.address}}"
+         verbosity: 2
+     - name: Printing Hostname
+       debug:
+         msg: "my hostname is {{ansible_hostname}}"
