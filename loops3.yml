@@ -1,0 +1,9 @@
+---
+ - name: Multiple Users Creation
+   hosts: lab
+   tasks:
+     -  name: creating users
+        user: name="{{item}}" state=present
+        with_items:
+            - sa
+            - re
