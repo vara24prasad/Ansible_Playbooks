@@ -1,7 +1,0 @@
----
- - name: debug module for case 6.2
-   hosts: lab
-   tasks:
-     - name: Printing IP Addres by Using msg parameter in Debug Module with System Variable (ansible_default_ipv4.address)
-       debug:
-        msg: "my IP Address of server : {{ansible_default_ipv4.address}}"
