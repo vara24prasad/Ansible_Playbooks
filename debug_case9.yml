@@ -1,0 +1,10 @@
+---
+ - name: Debug Module for case9
+   hosts: lab
+   vars:
+     os: "linux"
+     cloud: "aws"
+     tools: "devops"
+   tasks:
+     - debug:
+        msg: "I love {{os}}"
