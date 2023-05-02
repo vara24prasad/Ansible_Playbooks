@@ -1,0 +1,7 @@
+---
+ - name: debug module for case5
+   hosts: lab
+   tasks:
+     - name: Printing Hostname by Using var parameter in Debug Module with System Variable (inventory_hostname)
+       debug:
+        var: inventory_hostname
