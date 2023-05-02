@@ -1,0 +1,6 @@
+---
+ - name: Checking Kernel Version
+   hosts: lab
+   tasks:
+     - name: server kernel
+       command: uname -a
