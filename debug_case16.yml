@@ -1,0 +1,28 @@
+---
+ - name: Executing linux Commands using register Module
+   hosts: lab
+   tasks:
+     - name: server kernel
+       tags: ker
+       command: uname -a
+       register: kernel
+     - debug: var=kernel.stdout
+
+     - name: server date
+       tags: date
+       command: date
+       register: date
+     - debug: var=date.stdout
+
+
+     - name: server uptime
+       tags: ups
+       command: uptime
+       register: up
+     - debug: var=up.stdout
+
+     - name: server hostname
+       tags: host
+       command: hostname
+       register: host
+     - debug: var=host.stdout
