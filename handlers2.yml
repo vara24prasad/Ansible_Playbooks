@@ -1,0 +1,10 @@
+---
+ - name: Handler Case2
+   hosts: lab
+   tasks:
+     - name: Copyting ssh config file from Ansible Master to Ansible Clients
+       copy: src=/tmp/hand dest=/tmp
+       notify: restarting the sshd service
+   handlers:
+     - name: restarting the sshd service
+       service: name=sshd state=restarted
