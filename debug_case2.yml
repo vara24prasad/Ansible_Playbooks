@@ -1,0 +1,7 @@
+---
+ - name: debug module for case2
+   hosts: lab
+   tasks:
+     - name: Display below Message
+       debug:
+        msg: "welcome to varains"
