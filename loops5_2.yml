@@ -1,7 +1,0 @@
----
- - name: Multiple Service start
-   hosts: lab
-   tasks:
-     - shell: service sshd status
-       register: status
-     - debug: var=status
