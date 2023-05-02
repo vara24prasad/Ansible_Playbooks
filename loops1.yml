@@ -1,0 +1,9 @@
+---
+ - name: Checking Multiple Staus Check
+   hosts: lab
+   tasks:
+      - name: checking the Status of the services
+        service: name="{{item}}" state=restarted
+        loop:
+          - httpd
+          - vsftpd
