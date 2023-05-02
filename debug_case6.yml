@@ -1,0 +1,7 @@
+---
+ - name: debug module for case6
+   hosts: lab
+   tasks:
+     - name: Printing IP Addres by Using var parameter in Debug Module with System Variable (ansible_default_ipv4.address)
+       debug:
+        var: ansible_default_ipv4.address
