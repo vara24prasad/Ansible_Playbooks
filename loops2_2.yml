@@ -1,9 +1,0 @@
----
- - name: multiple Files Creation
-   hosts: lab
-   tasks:
-     - name: creating Files using loops
-       file: dest=/tmp/"{{item}}" state=directory
-       with_items:
-           - d1
-           - d2
