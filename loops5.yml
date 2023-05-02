@@ -1,0 +1,9 @@
+---
+ - name: Multiple Service start
+   hosts: lab
+   tasks:
+     - name: restarting the Service
+       service: name="{{item}}" state=restarted
+       with_items:
+           - sshd
+           - crond
