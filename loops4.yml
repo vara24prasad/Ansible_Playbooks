@@ -1,0 +1,10 @@
+---
+ - name: installing packages
+   hosts: lab
+   tasks:
+     -  name: Installing Packages
+        yum: name="{{item}}" state=present
+        with_items:
+            - httpd
+            - vsftpd
+            - ftp
