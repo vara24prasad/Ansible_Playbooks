@@ -1,0 +1,6 @@
+---
+ - name: debug module for case1
+   hosts: all
+   tasks:
+     - name: Display below Message
+       debug: msg= "welc[C[C[C[C[C[C[C[C[C[C[C[C[hai NARESH Sir[A[A[A[A[D[D[DGreeting[B[B[B[A[A[A Naresh Sir[B[B[B[B[D[D[D[D[D[D[D[D[D[D[D"
