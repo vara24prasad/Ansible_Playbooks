@@ -1,0 +1,6 @@
+---
+ - name: debug module for Greeting Hai to Friends
+   hosts: all
+   tasks:
+     - name: Display below Message
+       debug: msg= "HAI Friends"

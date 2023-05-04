@@ -1,0 +1,6 @@
+---
+ - name: debug module for Greeting BYE to Friends
+   hosts: all
+   tasks:
+     - name: Display below Message
+       debug: msg= "BYE Friends"
